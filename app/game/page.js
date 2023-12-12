@@ -407,6 +407,12 @@ useEffect(() => {
         </button>
       )}
 
+      <div className="w-full h-[10vh] grid place-items-center absolute bottom-12 font-bold">
+        <h1 className="text-white text-3xl">Tickets left: 10</h1>
+        <h1 className="text-white text-3xl">Upper Limit: 20/25</h1>
+
+        </div>
+
       <Toaster />
     </>
   );

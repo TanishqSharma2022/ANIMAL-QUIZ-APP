@@ -5,11 +5,11 @@ import { useState } from "react";
 
 export default function Home() {
   return (
-    <main className="w-full h-[100vh]  bg-[url('https://img.freepik.com/free-vector/hand-drawn-wildlife-background_52683-85493.jpg?w=1800&t=st=1701734747~exp=1701735347~hmac=778e82d2a324318f023c8782df8096625c698e14dcc034212c7bcf5c1251fce6')] bg-cover">
+    <main className="w-full h-[100vh]  bg-[url('https://img.freepik.com/free-photo/3d-landscape-africa_1048-4855.jpg?w=2000&t=st=1702348637~exp=1702349237~hmac=3005308932526c67f6a70c84bb785e5181281cbbc43baf227e7f175819ed85a7')] bg-cover">
         <div className="border border-blue-300 w-full h-full  items-center">
          
-          <div className="header shadow-lg w-full backdrop-blur-md  p-12 md:p-6 flex items-center justify-center text-center text-4xl md:text-5xl font-bold  text-black">
-        THE ANIMAL QUIZ
+          <div className="header shadow-lg w-full backdrop-blur-md  p-12 md:p-6 flex items-center justify-center text-center text-4xl md:text-5xl font-bold  text-white">
+       VAN VIHAR ANIMAL QUIZ
       </div>
       <div className="flex flex-col p-12 items-center h-[70vh] justify-center">
         <Link href="/game">
