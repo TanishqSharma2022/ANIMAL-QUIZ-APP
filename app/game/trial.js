@@ -1,12 +1,10 @@
 "use client";
-
-
 import {useEffect,  useState } from "react";
 import Flash from "../components/flash";
 import toast, { Toaster } from "react-hot-toast";
 // import flash from "../../public/flash.json"
 
-export default function game () {
+export default function game() {
   const [flip, setFlip] = useState(false);
   // const [score, setScore] = useState(0);
 
@@ -24,7 +22,7 @@ export default function game () {
       options: ["Grass", "Insects", "Meat", "Leaves"],
       answer: "Meat",
       answer_description: "Lions are carnivores and primarily eat meat.",
-      answer_image: "https://images.unsplash.com/photo-1607274134639-043342705e6f?q=80&w=2786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_lion_image.jpg"
     },
     {
       id: 2,
@@ -33,8 +31,8 @@ export default function game () {
       question: "Which of the following animals is a carnivore?",
       options: ["Elephant", "Tiger", "Giraffe", "Koala"],
       answer: "Tiger",
-      answer_description: "Tigers are carnivores. They primarily eat meat.",
-      answer_image: "https://images.unsplash.com/photo-1605092676920-8ac5ae40c7c8?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_description: "Tigers are carnivores.",
+      answer_image: "link_to_tiger_image.jpg"
     },
     {
       id: 3,
@@ -44,7 +42,7 @@ export default function game () {
       options: ["Fish", "Bamboo", "Ants", "Seals"],
       answer: "Seals",
       answer_description: "Polar bears primarily hunt seals for food.",
-      answer_image: "https://plus.unsplash.com/premium_photo-1664303475496-43a4ec29196e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_polar_bear_image.jpg"
     },
     {
       id: 4,
@@ -54,7 +52,7 @@ export default function game () {
       options: ["Meat", "Plants", "Insects", "Fish"],
       answer: "Plants",
       answer_description: "Cows are herbivores and mainly eat plants.",
-      answer_image: "https://images.unsplash.com/photo-1564085352725-08da0272627d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_cow_image.jpg"
     },
     {
       id: 5,
@@ -64,7 +62,7 @@ export default function game () {
       options: ["Lion", "Giraffe", "Penguin", "Eagle"],
       answer: "Giraffe",
       answer_description: "Giraffes are herbivores and eat leaves from trees.",
-      answer_image: "https://images.unsplash.com/photo-1547721064-da6cfb341d50?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_giraffe_image.jpg"
     },
     {
       id: 6,
@@ -74,7 +72,7 @@ export default function game () {
       options: ["Carrots", "Fish", "Insects", "Meat"],
       answer: "Carrots",
       answer_description: "Rabbits enjoy eating carrots as their primary food.",
-      answer_image: "https://images.unsplash.com/photo-1658285176084-b97d6a0cffda?q=80&w=2786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_rabbit_image.jpg"
     },
     {
       id: 7,
@@ -84,7 +82,7 @@ export default function game () {
       options: ["Larva", "Pupa", "Caterpillar", "Imago"],
       answer: "Imago",
       answer_description: "The adult form of a butterfly is called Imago.",
-      answer_image: "https://images.unsplash.com/photo-1500350347612-85b7eff2f759?q=80&w=2626&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_butterfly_image.jpg"
     },
     {
       id: 8,
@@ -94,7 +92,7 @@ export default function game () {
       options: ["Mouth", "Antennae", "Feet", "Wings"],
       answer: "Feet",
       answer_description: "Butterflies taste food with their feet.",
-      answer_image: "https://images.unsplash.com/photo-1535068484622-7a077e5aa558?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_butterfly_tasting_image.jpg"
     },
     {
       id: 9,
@@ -104,7 +102,7 @@ export default function game () {
       options: ["1 day", "1 week", "1 month", "1 year"],
       answer: "1 month",
       answer_description: "The average lifespan of a butterfly is around 1 month.",
-      answer_image: "https://images.unsplash.com/photo-1533048324814-79b0a31982f1?q=80&w=2178&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_butterfly_lifespan_image.jpg"
     },
     {
       id: 10,
@@ -114,7 +112,7 @@ export default function game () {
       options: ["Oak", "Baobab", "Pine", "Maple"],
       answer: "Baobab",
       answer_description: "The Baobab tree is often referred to as the 'Tree of Life.'",
-      answer_image: "https://images.unsplash.com/photo-1564198729838-cb82ee0c733c?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_baobab_tree_image.jpg"
     },
     {
       id: 11,
@@ -124,7 +122,7 @@ export default function game () {
       options: ["Birch", "Cedar", "Oak", "Willow"],
       answer: "Oak",
       answer_description: "Oak trees produce acorns as part of their reproductive cycle.",
-      answer_image: "https://images.unsplash.com/photo-1568654792529-d6f9f8a1c231?q=80&w=2855&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_oak_tree_image.jpg"
     },
     {
       id: 12,
@@ -134,7 +132,7 @@ export default function game () {
       options: ["Spring", "Summer", "Autumn", "Winter"],
       answer: "Winter",
       answer_description: "Evergreen trees retain their leaves throughout the winter season.",
-      answer_image: "https://images.unsplash.com/photo-1490008446666-6c0841b7c060?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_evergreen_tree_image.jpg"
     },
     {
       id: 13,
@@ -144,7 +142,7 @@ export default function game () {
       options: ["Gecko", "Monitor Lizard", "Iguana", "Komodo Dragon"],
       answer: "Komodo Dragon",
       answer_description: "The Komodo Dragon is the largest living species of lizard.",
-      answer_image: "https://images.unsplash.com/photo-1580844946486-f08607088f08?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_komodo_dragon_image.jpg"
     },
     {
       id: 14,
@@ -154,7 +152,7 @@ export default function game () {
       options: ["Python", "Cobra", "Viper", "Rattlesnake"],
       answer: "Cobra",
       answer_description: "Cobras are known for their distinctive hood, which they can expand.",
-      answer_image: "https://images.unsplash.com/photo-1531386151447-fd76ad50012f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_image: "link_to_cobra_image.jpg"
     },
     {
       id: 15,
@@ -163,56 +161,54 @@ export default function game () {
       question: "What is the largest species of tortoise?",
       options: ["Leopard Tortoise", "Red-Footed Tortoise", "Aldabra Giant Tortoise", "Galapagos Tortoise"],
       answer: "Galapagos Tortoise",
-      answer_description: "Galapagos Tortoises are the largest species of tortoise.",
-      answer_image: "https://images.unsplash.com/photo-1521217155737-0d5632e9813f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      answer_description: "",
+      answer_image: "link_to_galapagos_tortoise_image.jpg"
     }
 
 
 ];
-
-
-
-// Function to shuffle an array
-const shuffleArray = (array) => {
-  const shuffledArray = [...array];
-  for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-  }
-  return shuffledArray;
-};
-  
   const [flash, setFlash] = useState(FLASH_CARDS);
-  
+  // const handleAnswer = (selectedAnswer) => {
+  //   const currentQuestionData = questions[currentQuestion];
 
+  //   if (selectedAnswer === currentQuestionData.correctAnswer) {
+  //     // Correct answer
+  //     setScore(score + 1);
 
-  const selectQuestions = (questions, numEasy, numMedium, numHard) => {
-    // Shuffle the questions array
-    const shuffledQuestions = shuffleArray(questions);
-  
-    // Filter questions based on difficulty
-    const easyQuestions = shuffledQuestions.filter((q) => q.difficulty === "Easy").slice(0, numEasy);
+  //     // Move to the next difficulty level
+  //     if (difficulty === 'easy') {
+  //       setDifficulty('medium');
+  //     } else if (difficulty === 'medium') {
+  //       setDifficulty('hard');
+  //     }
 
-    const mediumQuestions = shuffledQuestions.filter((q) => q.difficulty === "Medium").slice(0, numMedium);
-    const hardQuestions = shuffledQuestions.filter((q) => q.difficulty === "Hard").slice(0, numHard);
-  
-    // Concatenate the selected questions
-    const selectedQuestions = [...easyQuestions, ...mediumQuestions, ...hardQuestions];
-  
-    return selectedQuestions;
-  };
-  const [selectedQuestions, setSelectedQuestions] = useState([]);
-useEffect(()=>{
-    const questions = selectQuestions(FLASH_CARDS, 4, 3, 2);
-    setSelectedQuestions(questions)
+  //     // Move to the next species if it was the hard question
+  //     if (difficulty === 'hard') {
+  //       const nextSpecies = getNextSpecies();
+  //       setSpecies(nextSpecies);
+  //     }
+  //   } else {
+  //     // Incorrect answer
+  //     // Reset difficulty to easy and move to the next species
+  //     setDifficulty('easy');
+  //     const nextSpecies = getNextSpecies();
+  //     setSpecies(nextSpecies);
+  //   }
 
+  //   // Move to the next question
+  //   setCurrentQuestion(currentQuestion + 1);
+  // };
 
-}, [])
+  // const getNextSpecies = () => {
+  //   // Logic to determine the next species (Birds, Mammals, Reptiles)
+  //   // ...
 
-
-
-
-  
+  //   // For simplicity, let's assume a cyclic order
+  //   const speciesOrder = ['Birds', 'Mammals', 'Reptiles'];
+  //   const currentIndex = speciesOrder.indexOf(species);
+  //   const nextIndex = (currentIndex + 1) % speciesOrder.length;
+  //   return speciesOrder[nextIndex];
+  // };
 
 
 
@@ -223,18 +219,9 @@ useEffect(()=>{
 
   function CheckAnswer(option) {
     setFlip(true);
-    if (option !== "" && option === selectedQuestions[count].answer) {
+    if (option !== "" && option === flash[count].answer) {
       toast.success("Hurrah! Correct Answer");
-      console.log(selectedQuestions[count].difficulty)
-      if(selectedQuestions[count].difficulty == "Easy"){
-        setScore(score + 1);        
-      }else if(selectedQuestions[count].difficulty == "Medium"){
-        setScore(score + 2)
-      }else if(selectedQuestions[count].difficulty == "Hard"){
-        setScore(score + 5)
-      }
-
-
+      setScore(score + 1);
     } else {
       toast.error("Oops! Wrong Answer");
     }
@@ -246,7 +233,7 @@ useEffect(()=>{
   const [complete, setComplete] = useState(false);
 
   function NextCounter() {
-    if (count == selectedQuestions.length - 1) {
+    if (count == FLASH_CARDS.length - 1) {
       setComplete(true);
       setCounter(0);
       setSeconds(0)
@@ -273,40 +260,39 @@ useEffect(() => {
 }, [seconds]);
   return (
     <>
-      <div className="w-full h-[100vh]  bg-[url('https://img.freepik.com/free-photo/3d-landscape-africa_1048-4855.jpg?w=2000&t=st=1702348637~exp=1702349237~hmac=3005308932526c67f6a70c84bb785e5181281cbbc43baf227e7f175819ed85a7')] bg-cover">
+      <div className="w-full h-[100vh]  bg-[url('https://img.freepik.com/free-vector/hand-drawn-wildlife-background_52683-85493.jpg?w=1800&t=st=1701734747~exp=1701735347~hmac=778e82d2a324318f023c8782df8096625c698e14dcc034212c7bcf5c1251fce6')] bg-cover">
         <div className=" w-full h-full  items-center">
-
-          <div className="header shadow-lg w-full backdrop-blur-md  p-12 md:p-6 flex items-center justify-center text-3xl md:text-5xl font-bold drop-shadow-lg text-white">
+         
+          <div className="header shadow-lg w-full backdrop-blur-md  p-12 md:p-6 flex items-center justify-center text-3xl md:text-5xl font-bold drop-shadow-lg text-black">
         THE ANIMAL QUIZ
       </div>
       <h1 className="absolute p-4 shadow-lg bg-gray-600 backdrop-blur-md top-[150px] md:top-36 left-6 md:left-12 text-white text-2xl font-bold">Score: {score}</h1>
       <h1 className="absolute p-4 shadow-lg bg-gray-600 backdrop-blur-md  md:top-36 top-[150px] right-6 md:right-12  text-white text-2xl font-bold">Time: {seconds}s</h1>
   <div className="relative w-full   h-[80vh] grid place-items-center ">
-          {!complete && selectedQuestions.length > 0 && <div
-            className={`card bordergrid w-full shadow-xl relative  place-items-center mt-12  justify-center cursor-pointer ${
+          {!complete && <div
+            className={`card bordergrid w-full shadow-xl relative  place-items-center  justify-center cursor-pointer ${
               flip ? "flip" : ""
             } `}
 
         
           >
 
-            <div className="front absolute flex flex-col gap-6 w-full h-full rounded-[20px] items-center p-6 md:p-10">
+            <div className="front absolute flex flex-col gap-6 w-full h-full rounded-[20px] items-center p-6 md:p-12">
 
-            <h1 className="text-white font-bold text-2xl">Question {count+1}/{selectedQuestions.length}</h1>
-            <div className="flex items-center justify-between w-full">
-            <h1 className="text-black font-bold text-xl">{selectedQuestions[count].type}</h1><h1 className="text-black font-bold text-xl"> {selectedQuestions[count].difficulty}</h1>
-</div>
-              <h1 className="font-bold text-black text-3xl md:text-3xl  py-2">
+            <h1 className="text-white font-bold text-2xl">Question {count+1}/10</h1>
+            <h1 className="text-white font-bold text-2xl">{flash[count].type} - {flash[count].difficulty}</h1>
 
-                {selectedQuestions[count].question}
+              <h1 className="font-bold text-black text-3xl md:text-3xl">
+
+                {flash[count].question}
               </h1>
-              <div className="grid grid-rows-2 grid-cols-2 p-6   w-full absolute bottom-4 md:grid-rows-2 md:grid-cols-2 gap-6">
-                {selectedQuestions[count].options.map((options) => {
+              <div className="grid grid-rows-2 grid-cols-2 p-6  w-full absolute bottom-12 md:grid-rows-2 md:grid-cols-2 gap-6">
+                {flash[count].options.map((options) => {
                   return (
                     <button
                       key={options}
-                      className={`border-2 shadow-xl border-black p-1 py-4 md:p-4 w-full bg-white text-black  cursor-pointer rounded-[40px] hover:bg-white hover:text-blue-400 focus:text-black ${
-                        options === selectedQuestions[count].answer
+                      className={`border-2 shadow-xl border-black p-1 md:p-4 w-full bg-white text-black  cursor-pointer rounded-[40px] hover:bg-white hover:text-blue-400 focus:text-black ${
+                        options === flash[count].answer
                           ? "active:bg-green-500"
                           : "focus:bg-red-500"
                       }}`}
@@ -319,16 +305,16 @@ useEffect(() => {
               </div>
             </div>
             <div className="back absolute p-6 h-full flex gap-4 flex-col rounded-xl">
-              <div className="w-full md:p-4 grid place-items-center text-gray-800 font-bold text-3xl">
-                <h1>{selectedQuestions[count].answer}</h1>
+              <div className="w-full  md:p-4 grid place-items-center  text-gray-800 font-bold text-3xl">
+                <h1>{flash[count].answer}</h1>
               </div>
               <div className="w-full  place-items-center h-full md:p-4 ">
                 <img
-                  className="answer_image float-left mr-4 shadow-lg w-[150px] md:w-[200px] object-cover"
-                  src={selectedQuestions[count].answer_image}
+                  className="answer_image float-left m-5 w-[150px] md:w-[200px] object-cover"
+                  src={flash[count].answer_image}
                 />
                 <p className="text-black align-justify font-semibold text-xl">
-                  {selectedQuestions[count].answer_description}
+                  {flash[count].answer_description}
                 </p>
               </div>
             </div>
@@ -340,19 +326,16 @@ useEffect(() => {
           {
             complete && 
             
-            <div className="w-full h-full border top-12 left-0 absolute grid place-items-center">
+            <div className="w-full h-full border top-12 left-0 absolute flex flex-col justify-center items-center">
 
-            <div className="bg-white/80 shadow-lg drop-blur-lg p-12 rounded-2xl flex flex-col justify-center items-center ">
+  
               <h1 className="text-3xl font-bold text-black">Congratulations! You have completed the quiz.</h1>
-              <h1 className="text-2xl font-bold text-black">Your score is {score} / 25</h1>
+              <h1 className="text-2xl font-bold text-black">Your score is {score}</h1>
               <button className="p-4 rounded-xl border border-black   bg-white text-2xl mt-12" onClick={() => location.reload()}>Play Again</button>
-            </div></div>
+            </div>
           }
         </div>
       </div>
-      {/* {selectedQuestions.map((ques) => {
-        return(ques.question)
-      })} */}
       {flip && !complete && <button
         className="p-4 absolute left-10 bottom-12  font-bold rounded-[40px] border-5 border-black shadow-2xl  bg-white text-2xl"
         onClick={() => NextCounter()}

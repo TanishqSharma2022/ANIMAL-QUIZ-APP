@@ -1,0 +1,155 @@
+{
+    "questions": [
+      {
+        "id": 1,
+        "type": "Carnivore",
+        "difficulty": "Easy",
+        "question": "What is the primary diet of a lion?",
+        "options": ["Grass", "Insects", "Meat", "Leaves"],
+        "answer": "Meat",
+        "answer_description": "Lions are carnivores and primarily eat meat.",
+        "answer_image": "link_to_lion_image.jpg"
+      },
+      {
+        "id": 2,
+        "type": "Carnivore",
+        "difficulty": "Medium",
+        "question": "Which of the following animals is a carnivore?",
+        "options": ["Elephant", "Tiger", "Giraffe", "Koala"],
+        "answer": "Tiger",
+        "answer_description": "Tigers are carnivores.",
+        "answer_image": "link_to_tiger_image.jpg"
+      },
+      {
+        "id": 3,
+        "type": "Carnivore",
+        "difficulty": "Hard",
+        "question": "What is the main food source for a polar bear?",
+        "options": ["Fish", "Bamboo", "Ants", "Seals"],
+        "answer": "Seals",
+        "answer_description": "Polar bears primarily hunt seals for food.",
+        "answer_image": "link_to_polar_bear_image.jpg"
+      },
+      {
+        "id": 4,
+        "type": "Herbivore",
+        "difficulty": "Easy",
+        "question": "What do cows primarily eat?",
+        "options": ["Meat", "Plants", "Insects", "Fish"],
+        "answer": "Plants",
+        "answer_description": "Cows are herbivores and mainly eat plants.",
+        "answer_image": "link_to_cow_image.jpg"
+      },
+      {
+        "id": 5,
+        "type": "Herbivore",
+        "difficulty": "Medium",
+        "question": "Which of the following animals is a herbivore?",
+        "options": ["Lion", "Giraffe", "Penguin", "Eagle"],
+        "answer": "Giraffe",
+        "answer_description": "Giraffes are herbivores and eat leaves from trees.",
+        "answer_image": "link_to_giraffe_image.jpg"
+      },
+      {
+        "id": 6,
+        "type": "Herbivore",
+        "difficulty": "Hard",
+        "question": "What is the primary food source for a rabbit?",
+        "options": ["Carrots", "Fish", "Insects", "Meat"],
+        "answer": "Carrots",
+        "answer_description": "Rabbits enjoy eating carrots as their primary food.",
+        "answer_image": "link_to_rabbit_image.jpg"
+      },
+      {
+        "id": 7,
+        "type": "Butterflies",
+        "difficulty": "Easy",
+        "question": "What is the adult form of a butterfly called?",
+        "options": ["Larva", "Pupa", "Caterpillar", "Imago"],
+        "answer": "Imago",
+        "answer_description": "The adult form of a butterfly is called Imago.",
+        "answer_image": "link_to_butterfly_image.jpg"
+      },
+      {
+        "id": 8,
+        "type": "Butterflies",
+        "difficulty": "Medium",
+        "question": "What do butterflies use to taste food?",
+        "options": ["Mouth", "Antennae", "Feet", "Wings"],
+        "answer": "Feet",
+        "answer_description": "Butterflies taste food with their feet.",
+        "answer_image": "link_to_butterfly_tasting_image.jpg"
+      },
+      {
+        "id": 9,
+        "type": "Butterflies",
+        "difficulty": "Hard",
+        "question": "How long is the average lifespan of a butterfly?",
+        "options": ["1 day", "1 week", "1 month", "1 year"],
+        "answer": "1 month",
+        "answer_description": "The average lifespan of a butterfly is around 1 month.",
+        "answer_image": "link_to_butterfly_lifespan_image.jpg"
+      },
+      {
+        "id": 10,
+        "type": "Trees",
+        "difficulty": "Easy",
+        "question": "Which tree is known as the 'Tree of Life'?",
+        "options": ["Oak", "Baobab", "Pine", "Maple"],
+        "answer": "Baobab",
+        "answer_description": "The Baobab tree is often referred to as the 'Tree of Life.'",
+        "answer_image": "link_to_baobab_tree_image.jpg"
+      },
+      {
+        "id": 11,
+        "type": "Trees",
+        "difficulty": "Medium",
+        "question": "Which tree produces acorns?",
+        "options": ["Birch", "Cedar", "Oak", "Willow"],
+        "answer": "Oak",
+        "answer_description": "Oak trees produce acorns as part of their reproductive cycle.",
+        "answer_image": "link_to_oak_tree_image.jpg"
+      },
+      {
+        "id": 12,
+        "type": "Trees",
+        "difficulty": "Hard",
+        "question": "In which season do evergreen trees retain their leaves?",
+        "options": ["Spring", "Summer", "Autumn", "Winter"],
+        "answer": "Winter",
+        "answer_description": "Evergreen trees retain their leaves throughout the winter season.",
+        "answer_image": "link_to_evergreen_tree_image.jpg"
+      },
+      {
+        "id": 13,
+        "type": "Reptiles",
+        "difficulty": "Easy",
+        "question": "What is the largest living species of lizard?",
+        "options": ["Gecko", "Monitor Lizard", "Iguana", "Komodo Dragon"],
+        "answer": "Komodo Dragon",
+        "answer_description": "The Komodo Dragon is the largest living species of lizard.",
+        "answer_image": "link_to_komodo_dragon_image.jpg"
+      },
+      {
+        "id": 14,
+        "type": "Reptiles",
+        "difficulty": "Medium",
+        "question": "Which snake is known for its hood?",
+        "options": ["Python", "Cobra", "Viper", "Rattlesnake"],
+        "answer": "Cobra",
+        "answer_description": "Cobras are known for their distinctive hood, which they can expand.",
+        "answer_image": "link_to_cobra_image.jpg"
+      },
+      {
+        "id": 15,
+        "type": "Reptiles",
+        "difficulty": "Hard",
+        "question": "What is the largest species of tortoise?",
+        "options": ["Leopard Tortoise", "Red-Footed Tortoise", "Aldabra Giant Tortoise", "Galapagos Tortoise"],
+        "answer": "Galapagos Tortoise",
+        "answer_description": "",
+        "answer_image": "link_to_galapagos_tortoise_image.jpg"
+      }
+    ]
+}
+  
