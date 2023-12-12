@@ -399,6 +399,7 @@ useEffect(() => {
         return(ques.question)
       })} */}
       {flip && !complete && (
+        
         <button
           className="p-4 absolute left-10 bottom-12  font-bold rounded-[40px] border-5 border-black shadow-2xl  bg-white text-2xl"
           onClick={() => NextCounter()}
@@ -407,11 +408,7 @@ useEffect(() => {
         </button>
       )}
 
-      <div className="w-full h-[10vh] grid place-items-center absolute bottom-12 font-bold">
-        <h1 className="text-white text-3xl">Tickets left: 10</h1>
-        <h1 className="text-white text-3xl">Upper Limit: 20/25</h1>
-
-        </div>
+      
 
       <Toaster />
     </>
