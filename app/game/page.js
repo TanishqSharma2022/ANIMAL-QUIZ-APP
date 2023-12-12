@@ -301,7 +301,7 @@ useEffect(() => {
       <div className="w-full h-[100vh]  bg-[url('https://img.freepik.com/free-photo/3d-landscape-africa_1048-4855.jpg?w=2000&t=st=1702348637~exp=1702349237~hmac=3005308932526c67f6a70c84bb785e5181281cbbc43baf227e7f175819ed85a7')] bg-cover">
         {!complete && !usersubmit && 
         <div className="w-full flex flex-col absolute items-center justify-center gap-12 h-full">
-          <input className="p-4 rounded-2xl text-3xl shadow-xl" type="text" placeholder="Enter your username here." onChange={(event) => setUsername(event.target.value)} />
+          <input className="p-4 rounded-2xl text-xl md:text-3xl shadow-xl" type="text" placeholder="Enter your username here." onChange={(event) => setUsername(event.target.value)} />
           <button className="bg-white text-black shadow-lg p-4 px-6 text-2xl font-bold rounded-2xl border border-white" type="submit" onClick={() => setUsersubmit(true)}>Submit</button>
           </div>
         }   
