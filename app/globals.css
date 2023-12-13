@@ -18,7 +18,7 @@
 
 .card {
   background: rgba(166, 165, 165, 0.5);
-  max-width: 500px;
+  max-width: 700px;
   min-height: 450px;
   max-height: 500px;
   display: flex;padding: 20px;

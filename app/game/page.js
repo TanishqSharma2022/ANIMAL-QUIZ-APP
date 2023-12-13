@@ -15,7 +15,8 @@ export default function game() {
 
   const FLASH_CARDS = [
     {
-      id: 1,
+      option_images:[],
+      question_image:"",id: 1,
       type: "Carnivore",
       difficulty: "Easy",
       question: "What is the primary diet of a lion?",
@@ -26,7 +27,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1607274134639-043342705e6f?q=80&w=2786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 2,
+      question_image:"",id: 2,
       type: "Carnivore",
       difficulty: "Medium",
       question: "Which of the following animals is a carnivore?",
@@ -35,9 +36,11 @@ export default function game() {
       answer_description: "Tigers are carnivores. They primarily eat meat.",
       answer_image:
         "https://images.unsplash.com/photo-1605092676920-8ac5ae40c7c8?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
+      option_images: ['https://images.unsplash.com/photo-1605092676920-8ac5ae40c7c8?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://plus.unsplash.com/premium_photo-1664303475496-43a4ec29196e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1603483080228-04f2313d9f10?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', 'https://images.unsplash.com/photo-1579972383667-4894c883d674?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D']
+      },
     {
-      id: 3,
+      option_images:[],
+      question_image:"",id: 3,
       type: "Carnivore",
       difficulty: "Hard",
       question: "What is the main food source for a polar bear?",
@@ -48,7 +51,7 @@ export default function game() {
         "https://plus.unsplash.com/premium_photo-1664303475496-43a4ec29196e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 4,
+      option_images:[],question_image:"",id: 4,
       type: "Herbivore",
       difficulty: "Easy",
       question: "What do cows primarily eat?",
@@ -59,7 +62,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1564085352725-08da0272627d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 5,
+      option_images:[],question_image:"",id: 5,
       type: "Herbivore",
       difficulty: "Medium",
       question: "Which of the following animals is a herbivore?",
@@ -70,7 +73,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1547721064-da6cfb341d50?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 6,
+      option_images:[],question_image:"",id: 6,
       type: "Herbivore",
       difficulty: "Hard",
       question: "What is the primary food source for a rabbit?",
@@ -81,7 +84,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1658285176084-b97d6a0cffda?q=80&w=2786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 7,
+      option_images:[],question_image:"",id: 7,
       type: "Butterflies",
       difficulty: "Easy",
       question: "What is the adult form of a butterfly called?",
@@ -92,7 +95,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1500350347612-85b7eff2f759?q=80&w=2626&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 8,
+      option_images:[],question_image:"",id: 8,
       type: "Butterflies",
       difficulty: "Medium",
       question: "What do butterflies use to taste food?",
@@ -103,7 +106,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1535068484622-7a077e5aa558?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 9,
+      option_images:[],question_image:"",id: 9,
       type: "Butterflies",
       difficulty: "Hard",
       question: "How long is the average lifespan of a butterfly?",
@@ -115,7 +118,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1533048324814-79b0a31982f1?q=80&w=2178&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 10,
+      option_images:[],question_image:"",id: 10,
       type: "Trees",
       difficulty: "Easy",
       question: "Which tree is known as the 'Tree of Life'?",
@@ -127,7 +130,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1564198729838-cb82ee0c733c?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 11,
+      option_images:[],question_image:"",id: 11,
       type: "Trees",
       difficulty: "Medium",
       question: "Which tree produces acorns?",
@@ -139,7 +142,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1568654792529-d6f9f8a1c231?q=80&w=2855&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 12,
+      option_images:[],question_image:"",id: 12,
       type: "Trees",
       difficulty: "Hard",
       question: "In which season do evergreen trees retain their leaves?",
@@ -151,7 +154,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1490008446666-6c0841b7c060?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 13,
+      option_images:[],question_image:"",id: 13,
       type: "Reptiles",
       difficulty: "Easy",
       question: "What is the largest living species of lizard?",
@@ -163,7 +166,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1580844946486-f08607088f08?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 14,
+      option_images:[],question_image:"",id: 14,
       type: "Reptiles",
       difficulty: "Medium",
       question: "Which snake is known for its hood?",
@@ -175,7 +178,7 @@ export default function game() {
         "https://images.unsplash.com/photo-1531386151447-fd76ad50012f?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      id: 15,
+      option_images:[],question_image:"",id: 15,
       type: "Reptiles",
       difficulty: "Hard",
       question: "What is the largest species of tortoise?",
@@ -243,7 +246,8 @@ export default function game() {
   // Function to check answer and update score and flip the card
   function CheckAnswer(option) {
     setFlip(true);
-    if (option !== "" && option === selectedQuestions[count].answer) {
+
+    if (option !== "" && option === selectedQuestions[count].answer || option === selectedQuestions[count].answer_image) {
       toast.success("Hurrah! Correct Answer");
       console.log(selectedQuestions[count].difficulty);
       if (selectedQuestions[count].difficulty == "Easy") {
@@ -298,7 +302,7 @@ useEffect(() => {
 
   return (
     <>
-      <div className="w-full h-[100vh]  bg-[url('https://img.freepik.com/free-photo/3d-landscape-africa_1048-4855.jpg?w=2000&t=st=1702348637~exp=1702349237~hmac=3005308932526c67f6a70c84bb785e5181281cbbc43baf227e7f175819ed85a7')] bg-cover">
+      <div className="w-full h-[100vh]  bg-[url('https://vanviharnationalpark.org/public/storage/gallery/36150570c315c58e50a4481e71d738d5d44fa4a6.jpg')] bg-cover">
         {!complete && !usersubmit && 
         <div className="w-full flex flex-col absolute items-center justify-center gap-12 h-full">
           <input className="p-4 rounded-2xl text-xl md:text-3xl shadow-xl" type="text" placeholder="Enter your username here." onChange={(event) => setUsername(event.target.value)} />
@@ -339,19 +343,36 @@ useEffect(() => {
                   <h1 className="font-bold text-black text-3xl md:text-3xl  py-2">
                     {selectedQuestions[count].question}
                   </h1>
-                  <div className="grid grid-rows-2 grid-cols-2 p-6   w-full absolute bottom-4 md:grid-rows-2 md:grid-cols-2 gap-6">
-                    {selectedQuestions[count].options.map((options) => {
+                  <div className="grid grid-rows-2 grid-cols-2 p-6   w-full absolute bottom-4 md:grid-rows-1 md:grid-cols-4 gap-6">
+                    {selectedQuestions[count].option_images.length == 0 &&  selectedQuestions[count].options.map((options) => {
                       return (
+
                         <button
                           key={options}
                           className={`border-2 shadow-xl border-black p-1 py-4 md:p-4 w-full bg-white text-black  cursor-pointer rounded-[40px] hover:bg-white hover:text-blue-400 focus:text-black ${
                             options === selectedQuestions[count].answer
-                              ? "active:bg-green-500"
-                              : "focus:bg-red-500"
                           }}`}
                           onClick={() => CheckAnswer(options)}
                         >
-                          {options}
+                          {
+                          
+                            options
+                          
+                          }
+                        </button>
+                      );
+                    })}
+                    {selectedQuestions[count].option_images.length != 0 &&  selectedQuestions[count].option_images.map((options) => {
+                      return (
+
+                        <button
+                          key={options}
+                          className={`border-2 shadow-xl border-black w-full  text-black  cursor-pointer  hover:border-white focus:text-black ${
+                            options === selectedQuestions[count].answer
+                          }}`}
+                          onClick={() => CheckAnswer(options)}
+                        >
+                          <img src={options} className="w-full h-auto object-fill" />
                         </button>
                       );
                     })}
@@ -376,7 +397,7 @@ useEffect(() => {
           </div>}
 
           {complete && (
-            <div className="w-full h-full border top-12 left-0 absolute grid place-items-center">
+            <div className="w-full h-full  top-12 left-0 absolute grid place-items-center">
               <div className="bg-white/80 shadow-lg drop-blur-lg p-12 rounded-2xl flex flex-col justify-center items-center ">
                 <h1 className="text-3xl font-bold text-black">
                   Congratulations! You have completed the quiz.
