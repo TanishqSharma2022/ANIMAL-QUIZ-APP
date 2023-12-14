@@ -311,7 +311,7 @@ useEffect(() => {
         }   
         
          <div className=" w-full h-full  items-center">
-          <div className="header shadow-lg w-full backdrop-blur-md  p-12 md:p-6 flex items-center justify-center text-3xl md:text-5xl font-bold drop-shadow-lg text-white">
+          <div className="header shadow-lg w-full backdrop-blur-md  p-12 md:p-6 flex items-center justify-center text-3xl md:text-5xl font-bold drop-shadow-lg text-black">
             THE VAN VIHAR ANIMAL QUIZ
           </div>
           <h1 className="absolute p-4 shadow-lg bg-gray-600 backdrop-blur-md top-[150px] md:top-36 left-6 md:left-12 text-white text-2xl font-bold">
