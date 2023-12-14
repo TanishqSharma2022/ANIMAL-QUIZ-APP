@@ -51,15 +51,15 @@ export default function game() {
         "https://plus.unsplash.com/premium_photo-1664303475496-43a4ec29196e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      option_images:[],question_image:"",id: 4,
-      type: "Herbivore",
+      option_images:["https://www.floridamuseum.ufl.edu/wp-content/uploads/sites/8/2022/04/DSC02564-male-open-Great-Eggfly.jpg", "https://lh4.ggpht.com/E8_YDRcAKV9QRbpOISDpnsIix0K0svjMVaa-Im87DvN15kg-jzS0fjT2eWqpi7pqr_lac-giVUCUOJYw55Ugqw=s1200", "http://1.bp.blogspot.com/-PbAEpYbo4CM/Tbkl13zqwtI/AAAAAAAAKxo/8VBhBXddPVw/s1600/BP_adult_Khew_01.jpg", "https://upload.wikimedia.org/wikipedia/commons/f/f7/Yellow_pansy_%28Junonia_hierta_cebrene%29_male.jpg"],question_image:"",id: 4,
+      type: "Butterfly",
       difficulty: "Easy",
-      question: "What do cows primarily eat?",
-      options: ["Meat", "Plants", "Insects", "Fish"],
-      answer: "Plants",
-      answer_description: "Cows are herbivores and mainly eat plants.",
+      question: "Which one of these is the Danaid Eggfly?",
+      options: ["1", "2", "3", "4"],
+      answer: "Yes, This is the Danaid Butterfly",
+      answer_description: "Hypolimnas misippus, the Danaid eggfly,  mimic, or diadem, is a widespread species of nymphalid butterfly. It is well known for polymorphism and mimicry. Males are blackish with distinctive white spots that are fringed in blue.",
       answer_image:
-        "https://images.unsplash.com/photo-1564085352725-08da0272627d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://lh4.ggpht.com/E8_YDRcAKV9QRbpOISDpnsIix0K0svjMVaa-Im87DvN15kg-jzS0fjT2eWqpi7pqr_lac-giVUCUOJYw55Ugqw=s1200",
     },
     {
       option_images:[],question_image:"",id: 5,
@@ -367,7 +367,7 @@ useEffect(() => {
 
                         <button
                           key={options}
-                          className={`border-2 shadow-xl border-black w-full  text-black  cursor-pointer  hover:border-white focus:text-black ${
+                          className={`border-2 shadow-xl border-black w-full h-[100px]  text-black  cursor-pointer  hover:border-white focus:text-black ${
                             options === selectedQuestions[count].answer
                           }}`}
                           onClick={() => CheckAnswer(options)}
