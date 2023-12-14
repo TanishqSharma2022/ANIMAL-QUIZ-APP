@@ -18,7 +18,7 @@ export default function game() {
       option_images:[],
       question_image:"",id: 1,
       type: "Carnivore",
-      difficulty: "Easy",
+      difficulty: "Medium",
       question: "What is the primary diet of a lion?",
       options: ["Grass", "Insects", "Meat", "Leaves"],
       answer: "Meat",
@@ -29,7 +29,7 @@ export default function game() {
     {
       question_image:"",id: 2,
       type: "Carnivore",
-      difficulty: "Medium",
+      difficulty: "Easy",
       question: "Which of the following animals is a carnivore?",
       options: ["Elephant", "Tiger", "Giraffe", "Koala"],
       answer: "Tiger",
@@ -56,7 +56,7 @@ export default function game() {
       difficulty: "Easy",
       question: "Which one of these is the Danaid Eggfly?",
       options: ["1", "2", "3", "4"],
-      answer: "Yes, This is the Danaid Butterfly",
+      answer: "This is the Danaid Butterfly",
       answer_description: "Hypolimnas misippus, the Danaid eggfly,  mimic, or diadem, is a widespread species of nymphalid butterfly. It is well known for polymorphism and mimicry. Males are blackish with distinctive white spots that are fringed in blue.",
       answer_image:
         "https://lh4.ggpht.com/E8_YDRcAKV9QRbpOISDpnsIix0K0svjMVaa-Im87DvN15kg-jzS0fjT2eWqpi7pqr_lac-giVUCUOJYw55Ugqw=s1200",
@@ -367,12 +367,12 @@ useEffect(() => {
 
                         <button
                           key={options}
-                          className={`border-2 shadow-xl border-black w-full h-[100px]  text-black  cursor-pointer  hover:border-white focus:text-black ${
+                          className={`border-2 shadow-xl  w-full h-[200px]  text-black  cursor-pointer  hover:border-white focus:text-black ${
                             options === selectedQuestions[count].answer
                           }}`}
                           onClick={() => CheckAnswer(options)}
                         >
-                          <img src={options} className="w-full h-auto object-fill" />
+                          <img src={options} className="w-[200px] h-[200px] object-contain" />
                         </button>
                       );
                     })}
